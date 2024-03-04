@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    
+    <div class="grid">
+        <h2 align="center">Qr Code Generator</h2>
+        <center><img src="" alt="Qr_Code" id="img"></center>
+
+        <!-- Adding size of the Qr code -->
+       <div class="container">
+        <select  id="size" required>
+            <option value="100">100X100</option>
+            <option value="150">150X150</option>
+            <option value="200">200X200</option>
+            <option value="250" selected>250X250</option>  <!-- This option will be selected by default -->
+            <option value="300">300X300</option>
+        </select>
+         <br><br>
+        <!-- To get text from the user -->
+        <textarea placeholder="Enter Your Text" id="qrtext" required></textarea>
+        <span id="err"></span>
+        <br><br>
+        <input type="submit" value="Generate" onclick="genQR()">
+       </div>
+
+        <footer>
+            <div class="center">
+                &copy; 2024 WaRRioR
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
